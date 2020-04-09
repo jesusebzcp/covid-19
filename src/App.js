@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Estadisticas from "./components/Estadistica";
+import mapa from "./components/mapa.png";
+import DatosCo from "./components/DatosCo";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+    <>
+      {" "}
+      <Estadisticas />
+      <div className="contenedorPrincipal">
+        <div className="img">
+          <img src={mapa} width="600px" height="300px" />
+        </div>
+        <div className="datos mt-2">
+          {" "}
+          <DatosCo />
+        </div>
+      </div>
+      <div className="text-center">
         <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+          target="noreferrer"
+          rel="noopener"
+          href="https://www.linkedin.com/in/jesus-briceño-zerpa-848b18183"
         >
-          Learn React
+          By Create Jesus Briceño
         </a>
-      </header>
-    </div>
+      </div>
+    </>
   );
-}
+};
 
 export default App;

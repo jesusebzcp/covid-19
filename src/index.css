@@ -1,13 +1,83 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(51, 51, 51);
+  color: rgb(216, 216, 216);
+}
+.nrcovid {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: black;
+}
+.rcovid {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: black;
+}
+.covi {
+  text-transform: uppercase;
+
+  color: #fe6507;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* confimardos */
+.cf,
+.rc,
+.mr {
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+.mapa {
+  max-width: 100%;
+  text-align: center;
+}
+
+.contenedorPrincipal {
+  display: flex;
+  justify-content: space-between;
+}
+.img {
+  width: 60%;
+}
+.datos {
+  width: 40%;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%,
+  100% {
+    -webkit-transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes sk-bounce {
+  0%,
+  100% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
+
+/* Estilos para telefono*/
+@media only screen and (max-width: 720px) {
+  body {
+    background-color: black;
+  }
+  img {
+    max-width: 100%;
+  }
+  .contenedorPrincipal {
+    display: block;
+  }
+  .img {
+    width: 100%;
+  }
+  .datos {
+    width: 100%;
+  }
 }
