@@ -5,6 +5,7 @@ import DatosCo from "./components/DatosCo";
 
 const App = () => {
   return (
+    //Manejamos la app completa donde enseñamos a los ususario la informacion de las Api
     <>
       {" "}
       <Estadisticas />
@@ -17,7 +18,7 @@ const App = () => {
           <DatosCo />
         </div>
       </div>
-      <div className="text-center">
+      <div className="text-center ">
         <a
           target="noreferrer"
           rel="noopener"

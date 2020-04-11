@@ -50,10 +50,19 @@ const DatosCo = () => {
           className="form-control"
           id="exampleFormControlSelect1"
         >
+          <option value="COL">--seleciona un pais-</option>
           <option value="COL">Colombia</option>
           <option value="VEN">Venezuela</option>
           <option value="BRA">Brasil</option>
           <option value="ITA">Italia</option>
+
+          <option value="ESP">España</option>
+          <option value="MX">Mexico</option>
+          <option value="PE">Peru</option>
+          <option value="USA">Estados unidos</option>
+          <option value="CN">China </option>
+          <option value="FR">Francia </option>
+          <option value="ARG">Argentina </option>
         </select>
         {load && (
           <div className="my-2">
